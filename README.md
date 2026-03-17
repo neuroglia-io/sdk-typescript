@@ -340,7 +340,7 @@ flowchart TD
     root-entry-node --> /do/0/step1
 
 
-classDef hidden display: none;
+classDef hidden width: 1px, height: 0px, opacity: 0;
 */
 ```
 
@@ -353,8 +353,10 @@ flowchart TD
     root-entry-node --> /do/0/step1
 
 
-classDef hidden display: none;
+classDef hidden width: 1px, height: 0px, opacity: 0;
 ```
+
+You can refer to the mermaid browser example for a live demo.
 
 ### Building Locally
 
@@ -364,6 +366,12 @@ To build the project and run tests locally, use the following commands:
 git clone https://github.com/serverlessworkflow/sdk-typescript.git
 cd sdk-typescript
 npm install && npm run build && npm run test
+```
+
+You can also run the browser examples by executing:
+
+```sh
+npm run serve
 ```
 
 If you're interested in contributing, reading the [Tooling Architecture](/tools/README.md) is a good place to start.
